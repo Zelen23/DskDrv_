@@ -53,6 +53,7 @@ public class Dsk_auth extends AppCompatActivity {
                         .permitAll().build();
                 StrictMode.setThreadPolicy(policy);
 
+
                 OkHttpClient client = new OkHttpClient();
                 HttpUrl.Builder httpul = HttpUrl.parse("https://oauth.yandex.ru/authorize?").newBuilder();
                 httpul.addQueryParameter("response_type", "code");
